@@ -53,7 +53,7 @@ h2 {
   font-size: 64px;
   line-height: 80px;
   color: #7000FF;
-  text-shadow: 0px 0px 121px rgba(112, 0, 255, 0.54);
+  text-shadow: 0px 0px 50px rgba(112, 0, 255, 0.40);
 }
 
 h3 { 

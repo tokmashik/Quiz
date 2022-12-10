@@ -6,6 +6,7 @@ import PostIdPage from "@/pages/PostIdPage";
 import PostPageWithStore from "@/pages/PostPageWithStore";
 import PostPageCompositionApi from "@/pages/PostPageCompositionApi";
 import VConstructor from "@/components/VConstructor"
+import Quizzes from "@/pages/Quizzes"
 
 const routes = [
     {
@@ -35,7 +36,11 @@ const routes = [
     {
         path: '/consructor',
         component: VConstructor
-    }
+    },
+    {
+        path: '/quizzes',
+        component: Quizzes
+    },
 ]
 
 const router = createRouter({

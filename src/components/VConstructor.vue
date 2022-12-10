@@ -1,10 +1,13 @@
 <template>
-  <div class="contein">
-    <my-input
-    placeholder="Question">
-
+  <div class="constructor">
+    <div class="contein">
+      <my-input
+      placeholder="Вопрос">
     </my-input>
+    
   </div>
+  </div>
+  
   </template>
   
   <script>
@@ -18,9 +21,14 @@
   </script>
   
   <style scoped>
-  .contein {
-
+.constructor {
+  display: flex;
+  width: 76%;
+  margin: 0 auto;
 }
 
+.contein {
+  width: 100%;
+}
   </style>
   

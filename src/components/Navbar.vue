@@ -2,8 +2,8 @@
   <div class="navbar">
     <div @click="$router.push('/')" class="mainlogo">Q</div>
     <div class="navbar__btns">
-      <!--<nav-button @click="$router.push('/posts')">Посты</nav-button>-->
-      <nav-button @click="$router.push('/store')">store</nav-button>
+      <nav-button @click="$router.push('/quizzes')">Quizzes</nav-button>
+      <nav-button @click="$router.push('/composition')">composition</nav-button>
       <!--<nav-button style="margin-left: 20px" @click="$router.push('/composition')">composition</nav-button>-->
       <nav-button style="margin-left: 30px" @click="$router.push('/consructor')">Сonstructor</nav-button>
       <nav-button style="margin-left: 30px" @click="$router.push('/about')">About</nav-button>
@@ -20,6 +20,7 @@ export default {
 .navbar {
   width: 100%;
   display: flex;
+  font-weight: 300;
 }
 .mainlogo {  
   cursor: pointer; 
@@ -27,7 +28,7 @@ export default {
   font-family: 'Gwen-Trial';
   font-weight: 350;
   color: #7000FF;
-  text-shadow: 0px 0px 11px rgba(112, 0, 255, 0.4);
+  text-shadow: 0px 0px 11px rgba(112, 0, 255, 0.3);
   margin-left: 12%;
   margin-top: 50px;
 }

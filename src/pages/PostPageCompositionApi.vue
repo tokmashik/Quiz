@@ -1,20 +1,16 @@
 <template>
-  <h2>
+  
+  <div>
+    <h2>
      Create an awesome quiz in minutes
   </h2>
- 
-  <div>
-    <h1>Страница с постами</h1>
     <my-input
       v-model="searchQuery"
       placeholder="Поиск...."
       v-focus
     />
     <div class="app__btns">
-      <my-button
-      >
-        Создать пользователя
-      </my-button>
+      
       <my-select
         v-model="selectedSort"
         :options="sortOptions"
