@@ -20,6 +20,8 @@ export default {
 .navbar {
   width: 100%;
   display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 300;
 }
 .mainlogo {  

@@ -29,7 +29,7 @@ export default {
 
 .app {
   font-family: 'Roboto';
-  font-weight: 300;
+  font-weight: 100;
 }
 
 h1 {
