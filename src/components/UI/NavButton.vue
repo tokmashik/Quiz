@@ -16,7 +16,7 @@ name: 'nav-button'
   display: inline-block;
   cursor: pointer; 
   font-size:16px;
-  text-decoration:none;
+  font-weight: 300;
   padding:12px 20px; 
   border: 0px;
   background:#E9E9E9;
