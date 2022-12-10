@@ -20,6 +20,7 @@ name: 'nav-button'
   padding:12px 20px; 
   border: 0px;
   background:#E9E9E9;
+  font-family: 'Roboto';
 }
 
 .navbutton:hover {
