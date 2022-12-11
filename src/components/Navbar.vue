@@ -3,10 +3,10 @@
     <div @click="$router.push('/')" class="mainlogo">Q</div>
     <div class="navbar__btns">
       <nav-button @click="$router.push('/quizzes')">Quizzes</nav-button>
-      <nav-button @click="$router.push('/quizgame')">quizgame</nav-button>
-      <nav-button style="margin-left: 20px" @click="$router.push('/composition')">composition</nav-button>
-      <nav-button style="margin-left: 30px" @click="$router.push('/consructor')">Сonstructor</nav-button>
-      <nav-button style="margin-left: 30px" @click="$router.push('/about')">About</nav-button>
+      <nav-button style="margin-left: 20px" @click="$router.push('/quizgame')">Quiz Game</nav-button>
+      <!--<nav-button style="margin-left: 20px" @click="$router.push('/store')">store</nav-button>-->
+      <nav-button style="margin-left: 20px" @click="$router.push('/consructor')">Сonstructor</nav-button>
+      <nav-button style="margin-left: 20px" @click="$router.push('/about')">About</nav-button>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="v-catalog">
     <VCatalogItem 
     v-for="card in cards"
-    :key="card.article"
+    v-bind:key="card.article"
     v-bind:card_data="card"
     @sendArticle="ShowChildArt"/>
   </div>

@@ -12,8 +12,6 @@
         Открыть
       </my-button>-->
     </div>
-
-    
 </template>
 
 <script>

@@ -30,7 +30,7 @@
     <div class="instr_card">
     <h2>Василий</h2>
     <h3></h3>
-    <h4>Жил был <div style="color: #E9E9E9;">аналитик</div> </h4> 
+    <h4>Просто Василий <div style="color: #E9E9E9;">Аналитик</div> </h4> 
     </div>
   </div>
       
