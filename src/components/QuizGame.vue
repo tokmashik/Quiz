@@ -24,7 +24,7 @@
 							: ''
 					}`">
           <div class="form-radio-hidden">
-            <input 
+            <input
 						type="radio" 
 						:id="'option' + index" 
 						:name="getCurrentQuestion.index" 
@@ -38,7 +38,7 @@
 				</label>
 			</div>
 			
-			<my-button  style="margin-bottom: 100px;"
+				<my-button  style="margin-bottom: 100px;"
 				@click="NextQuestion" 
 				:disabled="!getCurrentQuestion.selected">
 				{{ 
@@ -49,48 +49,61 @@
 							: 'Следующий вопрос'
 				}}
 			</my-button>
+			
+			
 		</section>
 
-		<section v-else>
-			<h2>Вы завершили квиз</h2>
-			<p>Количество правильных ответов: {{ score }}/{{ questions.length }}</p>
+		<section v-else class="end">
+			<h2 style="margin: 30px 0 30px 0;">Вы завершили квиз</h2>
+			<h3 style="font-size: 30px; margin-bottom: 50px;">Количество правильных ответов: {{ score }}/{{ questions.length }}</h3>
+		
+      <h2 style="margin-bottom: 20px;">Другие квизы:</h2> 
+      <VWrapper style="display: flex; width: 80%; margin: 0 auto;"/>
 		</section>
 
 
 	</main>
 </template>
 
+<script>
+import VWrapper from "@/components/VWrapper.vue"
+export default {
+  components: {
+    VWrapper,
+  }
+}
+</script>
 
 <script setup>
 import { ref, computed } from 'vue'
 const questions = ref([
   {
-	question: 'What is Vue?',
+	question: 'Что должен знать фронтенд-разработчик? Назовите три ключевых технологии.',
 	answer: 0,
 	options: [
-		'A framework',
-		'A library',
-		'A type of hat'
+		'HTML, CSS и JavaScript.',
+		'Kotlin, PHP и JavaScript.',
+		'PHP, HTML и CSS.'
 	],
 	selected: null
   },
   {
-	question: 'What is Vuex used for?',
+	question: 'К какому JS-фреймворку относится метод beforeMount()?',
 	answer: 2,
 	options: [
-		'Eating a delicious snack',
-		'Viewing things',
-		'State management'
+		'Ember',
+		'React',
+		'Vue'
 	],
 	selected: null
   },
   {
-	question: 'What is Vue Router?',
+	question: 'className — из какого это JS-фреймворка?',
 	answer: 1,
 	options: [
-		'An ice cream maker',
-		'A routing library for Vue',
-		'Burger sauce'
+		'jQuery',
+		'React',
+		'Angular'
 	],
 	selected: null
   }
@@ -132,8 +145,6 @@ const NextQuestion = () => {
   width: 76%;
   height: 100%;
   margin: 0 auto;
-  text-align: center;
-  align-items: center;
 }
 
 .quiz-info {
@@ -152,6 +163,9 @@ const NextQuestion = () => {
   margin-bottom: 30px;
 }
 
+.end {
+	text-align: center; align-items: center;
+}
 /* Определяем размещение по горизонтали элементов обернутых в label */
 .form-radio-hidden{
   display: flex;

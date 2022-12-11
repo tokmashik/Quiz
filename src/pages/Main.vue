@@ -76,9 +76,10 @@ export default {
 
 .Quizzesmain {
   display: flex;
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
 }
+
 .main_text
 {
   margin-left: 10px;
@@ -95,6 +96,7 @@ main {
 .instr_wr {
   padding: 10px 0 100px 0;
 }
+
 .instr {
   display: flex;
   width: 75%;
@@ -118,6 +120,7 @@ main {
   text-align: center; 
   margin-bottom: 20px;
 }
+
 .instr h2 {
   text-align: center; 
   border-bottom: 1px solid #7000FF;

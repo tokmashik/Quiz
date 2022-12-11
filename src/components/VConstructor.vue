@@ -1,7 +1,7 @@
 <template>
   <div class="constructor">
     <div class="contein">
-      <h2>Create an awesome quiz in minutes</h2> 
+      <h2 style="text-align: center">Create an awesome quiz in minutes</h2> 
       <my-input
       placeholder="Вопрос">
     </my-input>
@@ -30,6 +30,13 @@
 
 .contein {
   width: 100%;
+  margin-top: 40px;
 }
+
+.contein input {
+  width: 50%;
+}
+
+
   </style>
   

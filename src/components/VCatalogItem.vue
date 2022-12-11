@@ -1,11 +1,16 @@
 <template>
     <div class="v-catalog-item">
-        <img v-bind:src=" require('../assets/'+ card_data.image)">
-            <h3> {{card_data.name}}</h3>
+    <img style="border-radius: 8px;" v-bind:src=" require('../assets/'+ card_data.image)">
+    <h3> {{card_data.name}}</h3>
     <h4>{{card_data.discription}}</h4>
     <my-button @click="SendDataToParent">
-        Пройти квиз
+    Начать
     </my-button>
+    <!--<my-button
+        @click="$router.push(`/posts/${cards.article}`)"
+      >
+        Открыть
+      </my-button>-->
     </div>
 
     
@@ -31,7 +36,7 @@ export default {
 
 <style scoped>
 .v-catalog-item {
-    flex-basis: 25%;
+    flex-basis: 27%;
     padding: 28px;
     margin-bottom: 40px;
     margin-top: 30px;
@@ -39,4 +44,12 @@ export default {
     border-radius: 8px;
     align-items: center;
 }
+
+.v-catalog-item h3 {
+    padding: 5px;
+}
+.v-catalog-item h4 {
+    margin-bottom: 10px;
+}
+
 </style>

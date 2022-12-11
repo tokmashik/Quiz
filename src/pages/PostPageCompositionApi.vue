@@ -1,9 +1,5 @@
-<template>
-  
+<template> 
   <div>
-    <h2>
-     Create an awesome quiz in minutes
-  </h2>
     <my-input
       v-model="searchQuery"
       placeholder="Поиск...."

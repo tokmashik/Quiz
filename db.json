@@ -23,21 +23,21 @@
       },
       { 
         "article": "t4",
-        "image": "3.jpg", 
+        "image": "4.jpg", 
         "name": "Quiz 4", 
         "discription": "discription 4",
         "available": true
       },
       { 
         "article": "t5",
-        "image": "3.jpg", 
+        "image": "5.jpg", 
         "name": "Quiz 5", 
         "discription": "discription 5",
         "available": true
       },
       { 
         "article": "t6",
-        "image": "3.jpg", 
+        "image": "6.jpg", 
         "name": "Quiz 6", 
         "discription": "discription 6",
         "available": true

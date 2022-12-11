@@ -40,21 +40,21 @@ export default {
       },
       { 
         article: "t4",
-        image: "3.png", 
+        image: "4.png", 
         name: "Quiz 4", 
         discription: "discription 4",
         available: true
       },
       { 
         article: "t5",
-        image: "3.png", 
+        image: "5.png", 
         name: "Quiz 5", 
         discription: "discription 5",
         available: true
       },
       { 
         article: "t6",
-        image: "3.png", 
+        image: "6.png", 
         name: "Quiz 6", 
         discription: "discription 6",
         available: true

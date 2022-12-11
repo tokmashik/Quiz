@@ -4,7 +4,6 @@
     <router-view></router-view>
     <the-footer></the-footer>
   </div>
-
 </template>
 
 <script>
@@ -15,7 +14,6 @@ export default {
   components: {
     Navbar,
     TheFooter,
-    
   }
 }
 </script>
@@ -91,3 +89,5 @@ h4 {
   
 }
 </style>
+
+
