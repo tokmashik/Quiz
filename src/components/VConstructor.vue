@@ -1,6 +1,7 @@
 <template>
   <div class="constructor">
     <div class="contein">
+      <h2>Create an awesome quiz in minutes</h2> 
       <my-input
       placeholder="Вопрос">
     </my-input>

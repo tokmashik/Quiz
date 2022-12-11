@@ -1,7 +1,7 @@
 <template>
   <div class="mainvr">
     <div class="main_text">
-       <h1 class="title">Quizzes</h1>
+       <h1 style="margin-bottom: 10px;" >Quizzes</h1>
     <h3>
       Квиз – это интеллектуальное соревнование, в ходе которого один или несколько участников отвечают на поставленные вопросы.
     </h3>
@@ -34,17 +34,26 @@
   </div>
       
 </div>
-  <h2>
+<div class="h2quizzes">
+      <h2>
     Quizzes:
   </h2>
-  <my-quizzes>
-    f
-  </my-quizzes>
+</div>
+
+<div class="Quizzesmain">
+
+  <VWrapper/>
+</div>
+
 
 </template>
 
 <script>
+import VWrapper from "@/components/VWrapper.vue"
 export default {
+  components: {
+    VWrapper 
+  },
   data() {
     return {
       quizzez: [
@@ -65,6 +74,11 @@ export default {
   margin: 0 auto;
 }
 
+.Quizzesmain {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+}
 .main_text
 {
   margin-left: 10px;
@@ -98,6 +112,12 @@ main {
   margin: 0 30px;
 }
 
+.h2quizzes {
+  width: 76%;
+  margin: 0 auto;
+  text-align: center; 
+  margin-bottom: 20px;
+}
 .instr h2 {
   text-align: center; 
   border-bottom: 1px solid #7000FF;
