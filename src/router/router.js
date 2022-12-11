@@ -7,6 +7,7 @@ import PostPageWithStore from "@/pages/PostPageWithStore";
 import PostPageCompositionApi from "@/pages/PostPageCompositionApi";
 import VConstructor from "@/components/VConstructor"
 import Quizzes from "@/pages/Quizzes"
+import QuizGame from "@/components/QuizGame.vue"
 
 const routes = [
     {
@@ -41,6 +42,10 @@ const routes = [
         path: '/quizzes',
         component: Quizzes
     },
+    {
+        path: '/quizgame',
+        component: QuizGame
+    }
 ]
 
 const router = createRouter({
